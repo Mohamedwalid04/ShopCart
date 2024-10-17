@@ -10,7 +10,7 @@ window.onload = () => {
 function CheckValidation() {
     let user = JSON.parse(localStorage.getItem("user"))
     if (user) return;
-    window.location.href = "../login.html"
+    window.location.href = "login.html"
 }
 
 
