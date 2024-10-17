@@ -10,7 +10,7 @@ let cartItems = [];
 
 let Total = 0;
 
-
+let url = window.location.href;
 
 
 window.onload = () => {
@@ -138,7 +138,7 @@ function Checkout() {
         alert("Add some Products")
         return
     }
-    window.location.path = "/shoppingcart.html"
+    window.location.path = `${url}/shoppingcart.html`
 }
 
 function deleteItem(title) {
@@ -149,7 +149,7 @@ function deleteItem(title) {
 function CheckValidation() {
     let user = JSON.parse(localStorage.getItem("user"))
     if (user) return;
-    window.location.path = "/login.html"
+    window.location.path = `${url}/login.html`
 }
 
 
