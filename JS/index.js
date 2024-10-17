@@ -138,7 +138,7 @@ function Checkout() {
         alert("Add some Products")
         return
     }
-    window.location.href = "../shoppingcart.html"
+    window.location.path = "/shoppingcart.html"
 }
 
 function deleteItem(title) {
@@ -149,7 +149,7 @@ function deleteItem(title) {
 function CheckValidation() {
     let user = JSON.parse(localStorage.getItem("user"))
     if (user) return;
-    window.location.href = "../login.html"
+    window.location.path = "/login.html"
 }
 
 
