@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopCart</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <div class="cart-bar ">
+        <div>
+            <div>
+                <span class="xmark">
+                    <i class="fa-solid fa-xmark"></i>
+                </span>
+            </div>
+            <h2>
+                Cart
+            </h2>
+        </div>
+
+        <div class="items-Cart">
+        </div>
+        <div class="Price">
+            <div>
+                <span>Total:</span>
+                <span class="total"></span>
+            </div>
+
+            <button class="checkout" type="button">
+                checkout
+            </button>
+        </div>
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand text-success fs-1" href="./index.html">ShopCart</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">electronics</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">jewelery</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">men's clothing</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">women's clothing</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                    </ul>
+                    <div class="content">
+                        <div class="cart">
+                            <span class="cartIcon">
+                                <i class="fa-solid fa-cart-shopping"
+                                    style="color: var(--green); font-size: 30px; cursor: pointer;"></i>
+                            </span>
+                        </div>
+                        <button class="logout"><a href="./logout.html" style="color: white;">Logout</a></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="content d-flex align-items-center justify-content-center">
+            <div>
+                <h2>ShopCart</h2>
+                <p>Why wait? Shop today and enjoy unbeatable prices on top brands. Your perfect shopping experience
+                    is just a click away!</p>
+                <button>Shop now</button>
+            </div>
+        </div>
+    </main>
+    <div class="container-fluid">
+        <section class="items">
+            <h2>
+                Products
+            </h2>
+            <div class="boxs">
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="container-fluid content">
+            <div>
+                <h2>
+                    ShopCart
+                </h2>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <span>
+                        <i class="fa-brands fa-facebook fa-lg" style="color: var(--blue);"></i>
+                    </span>
+                    <span>
+                        <i class="fa-brands fa-instagram fa-lg" style="color: var(--orange);"></i>
+                    </span>
+                    <span>
+                        <i class="fa-brands fa-x-twitter fa-lg"></i>
+                    </span>
+                    <span>
+                        <i class="fa-brands fa-youtube fa-lg" style="color: var(--red);"></i>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <h2>
+                    Category
+                </h2>
+                <ul>
+                    <li>
+                        <a href="#">jewelery</a>
+                    </li>
+                    <li>
+                        <a href="#">electronics</a>
+                    </li>
+                    <li>
+                        <a href="#">men's clothing</a>
+                    </li>
+                    <li>
+                        <a href="#">women's clothing</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2>
+                    Contact Us
+                </h2>
+                <ul>
+                    <li>
+                        ShopCart@gmail.com
+                    </li>
+                    <li>
+                        +2012****45456
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2>
+                    About Us
+                </h2>
+                <p style="line-height: 1.7; font-size: 13px;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi illo sunt earum mollitia numquam ut
+                    non magni ratione. Pariatur quae soluta totam porro alias adipisci ipsa unde velit nam harum.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- main JS -->
+    <script src="./JS/index.js"></script>
+    <!-- Font Awesome -->
+    <script src="./JS/all.min.js"></script>
+    <!-- BootStrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
